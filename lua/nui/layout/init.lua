@@ -133,7 +133,7 @@ end
 ---@field position? number|string|nui_layout_option_position
 ---@field size? number|string|nui_layout_option_size
 
----@class NuiLayout
+---@class NuiLayout: NuiObject
 local Layout = Object("NuiLayout")
 
 ---@return '"float"'|'"split"' layout_type

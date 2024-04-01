@@ -147,8 +147,8 @@ end
 ---@field columns NuiTable.ColumnDef[]
 ---@field data table[]
 
----@class NuiTable
----@field private _ nui_table_internal
+---@class NuiTable: NuiObject
+---@field protected _ nui_table_internal
 ---@field bufnr integer
 ---@field ns_id integer
 local Table = Object("NuiTable")

@@ -91,11 +91,11 @@ end
 ---@field win_options? table<string, any>
 ---@field bufnr? integer
 
----@class NuiPopup
+---@class NuiPopup: NuiObject
 ---@field border NuiPopupBorder
 ---@field bufnr integer
 ---@field ns_id integer
----@field private _ nui_popup_internal
+---@field protected _ nui_popup_internal
 ---@field win_config nui_popup_win_config
 ---@field winid number
 local Popup = Object("NuiPopup")

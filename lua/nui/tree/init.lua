@@ -155,11 +155,11 @@ end
 ---@field get_node_id? fun(node: NuiTree.Node): string
 ---@field prepare_node? fun(node: NuiTree.Node, parent_node?: NuiTree.Node): nil|string|string[]|NuiLine|NuiLine[]
 
----@class NuiTree
+---@class NuiTree: NuiObject
 ---@field bufnr integer
 ---@field nodes { by_id: table<string,NuiTree.Node>, root_ids: string[] }
 ---@field ns_id integer
----@field private _ nui_tree_internal
+---@field protected _ nui_tree_internal
 ---@field winid number # @deprecated
 local Tree = Object("NuiTree")
 

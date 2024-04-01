@@ -7,7 +7,7 @@ local is_type = require("nui.utils").is_type
 ---@field hl_group? string
 ---@field [string] any
 
----@class NuiText
+---@class NuiText: NuiObject
 ---@field protected extmark? nui_text_extmark
 local Text = Object("NuiText")
 

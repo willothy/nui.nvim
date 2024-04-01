@@ -80,7 +80,7 @@ end
 
 _.get_next_id = get_id_generator("nui_")
 
----@private
+---@protected
 ---@param bufnr number
 ---@param linenr number line number (1-indexed)
 ---@param char_start number start character position (0-indexed)
@@ -99,14 +99,14 @@ end
 ---@type integer
 local fallback_namespace_id = vim.api.nvim_create_namespace("nui.nvim")
 
----@private
+---@protected
 ---@param ns_id integer
 ---@return integer
 function _.ensure_namespace_id(ns_id)
   return ns_id == -1 and fallback_namespace_id or ns_id
 end
 
----@private
+---@protected
 ---@param ns_id? integer|string
 ---@return integer ns_id namespace id
 function _.normalize_namespace_id(ns_id)
@@ -118,7 +118,7 @@ function _.normalize_namespace_id(ns_id)
   return ns_id or fallback_namespace_id
 end
 
----@private
+---@protected
 ---@param bufnr integer
 ---@param ns_id integer
 ---@param linenr_start? integer (1-indexed)
@@ -160,7 +160,7 @@ end
 _.set_buf_option = set_buf_option
 _.set_win_option = set_win_option
 
----@private
+---@protected
 ---@param bufnr number
 ---@param buf_options table<string, any>
 function _.set_buf_options(bufnr, buf_options)
@@ -169,7 +169,7 @@ function _.set_buf_options(bufnr, buf_options)
   end
 end
 
----@private
+---@protected
 ---@param winid number
 ---@param win_options table<string, any>
 function _.set_win_options(winid, win_options)
@@ -178,7 +178,7 @@ function _.set_win_options(winid, win_options)
   end
 end
 
----@private
+---@protected
 ---@param dimension number | string
 ---@param container_dimension number
 ---@return nil | number

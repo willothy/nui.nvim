@@ -205,7 +205,7 @@ end
 ---@field on_submit? fun(item: NuiTree.Node): nil
 
 ---@class NuiMenu: NuiPopup
----@field private _ nui_menu_internal
+---@field protected _ nui_menu_internal
 local Menu = Popup:extend("NuiMenu")
 
 ---@param content? string|NuiText|NuiLine

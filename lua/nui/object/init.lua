@@ -157,6 +157,10 @@ end
 
 --luacheck: push no max line length
 
+---@class NuiObject
+---@field extend fun(self: NuiObject, name: string): any
+---@field is_instance_of fun(instance: table, class: table): boolean
+
 ---@type (fun(name: string): table)|{ is_subclass: (fun(subclass: table, class: table): boolean), is_instance: (fun(instance: table, class: table): boolean) }
 local Object = setmetatable({
   is_subclass = is_subclass,

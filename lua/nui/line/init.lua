@@ -2,7 +2,7 @@ local Object = require("nui.object")
 local NuiText = require("nui.text")
 local defaults = require("nui.utils").defaults
 
----@class NuiLine
+---@class NuiLine: NuiObject
 ---@field _texts NuiText[]
 local Line = Object("NuiLine")
 

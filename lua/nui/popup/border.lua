@@ -442,10 +442,10 @@ end
 ---@field style? nui_popup_border_option_style
 ---@field text? nui_popup_border_option_text
 
----@class NuiPopupBorder
+---@class NuiPopupBorder: NuiObject
 ---@field bufnr integer
----@field private _ nui_popup_border_internal
----@field private popup NuiPopup
+---@field protected _ nui_popup_border_internal
+---@field protected popup NuiPopup
 ---@field win_config nui_popup_win_config
 ---@field winid number
 local Border = Object("NuiPopupBorder")

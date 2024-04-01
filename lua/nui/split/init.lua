@@ -106,8 +106,8 @@ end
 ---@field buf_options? table<string, any>
 ---@field win_options? table<string, any>
 
----@class NuiSplit
----@field private _ nui_split_internal
+---@class NuiSplit: NuiObject
+---@field protected _ nui_split_internal
 ---@field bufnr integer
 ---@field ns_id integer
 ---@field winid number

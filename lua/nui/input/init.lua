@@ -38,7 +38,7 @@ end
 ---@field pending_submit_value? string
 
 ---@class NuiInput: NuiPopup
----@field private _ nui_input_internal
+---@field protected _ nui_input_internal
 local Input = Popup:extend("NuiInput")
 
 ---@param popup_options nui_popup_options
